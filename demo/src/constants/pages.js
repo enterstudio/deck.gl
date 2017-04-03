@@ -167,6 +167,10 @@ export const docPages = generatePath([
         content: getDocUrl('layers/geojson-layer.md')
       },
       {
+        name: 'GraphLayer',
+        content: getDocUrl('layers/graph-layer.md')
+      },
+      {
         name: 'PathLayer',
         content: getDocUrl('layers/path-layer.md')
       },

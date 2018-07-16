@@ -38,13 +38,16 @@
     "bench": "node test/bench/node.js",
     "bench-browser": "webpack-dev-server --config webpack.config.bench-browser.js --progress --hot --open --port 3011",
     "test-fp64": "(cd test/fp64-test && webpack-dev-server --config webpack.config.test-fp64.js --progress --hot --open)",
-    "test-rendering": "(cd test/rendering-test && webpack-dev-server --config webpack.config.test-rendering.js --progress --hot --open)"
+    "test-rendering": "(cd test/rendering-test && webpack-dev-server --config webpack.config.test-rendering.js --progress --hot --open)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "d3-hexbin": "^0.2.1",
     "earcut": "^2.0.6",
     "gl-matrix": "^2.3.2",
-    "lodash.flattendeep": "^4.4.0"
+    "lodash.flattendeep": "^4.4.0",
+    "snyk": "^1.88.2"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -99,5 +102,6 @@
         }
       ]
     ]
-  }
+  },
+  "snyk": true
 }
